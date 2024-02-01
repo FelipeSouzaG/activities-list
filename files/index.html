@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Xerotodo</title>
+    </head>
+    <body>
+        <div class="viw">
+            <header class="header">
+                <h1 class="header-title">XERO<span class="title-color">TODO</span></h1>
+                <input type="checkbox" id="logout" class="header-button">
+                <label for="logout" class="header-logout">
+                    <span class="logout-menu size-menu"><img src="../img/logout.png"></span>
+                </label>
+                <ul class="logout-list">
+                    <li class="logout-list-item profile">Davi<span class="titleColor"> Galvão</span></li>
+                    <li class="logout-list-item"><img src="../img/profile.jpg" class="image"></li>
+                    <li class="logout-list-item mail">davigalvao@gmail.com</li>
+                    <li class="logout-list-item"><a onclick="logout()" href="../login.html" id="logout" class="exit">Exit</a></li>
+                </ul>
+            </header>
+            <main class="container">
+                <section class="counter">
+                    <div class="counter-items">
+                        <h2 class="counter-items-title">Todo Done</h2>
+                        <p class="counter-items-text">Keep it up</p>
+                    </div>
+                    <div class="counter-items">
+                        <b class="counter-items-actives">
+                            <span class="counter-activities performed">
+                                1
+                            </span>
+                            <span class="counter-activities">/</span>
+                            <span class="counter-activities scheduled">
+                                3
+                            </span>
+                        </b>
+                    </div>
+                </section>
+                <section class="activities">
+                    <span class="activities-add">
+                        <input type="text" class="activities-add-text" id="activities-text" placeholder="write your next task">
+                        <input type="button" class="activities-add-button" onclick="activityAdd()" id="activity-add" value="+">
+                    </span>
+                </section>   
+                <section class="task">
+                    <ul class="task-list">
+                        <li class="task-list-item" id="task-1">
+                            <span class="task-list-item-text">
+                                <input type="checkbox" id="task-status-1">
+                                <label for="task-status-1" class="task-text">Task 1</label>
+                            </span>
+                            <span class="task-list-item-button">
+                                <a onclick="taskEdit(1)" href="#" id="task-edit"></a>
+                                <a onclick="taskDelete(1)" href="#" id="task-delete"></a>
+                            </span>
+                        </li>
+                        <li class="task-list-item" id="task-2">
+                            <span class="task-list-item-text">
+                                <input type="checkbox" id="task-status-2">
+                                <label for="task-status-2" class="task-text">Task 2</label>
+                            </span>
+                            <span class="task-list-item-button">
+                                <a onclick="taskEdit(2)" href="#" id="task-edit"></a>
+                                <a onclick="taskDelete(2)" href="#" id="task-delete"></a>
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+        <div>
+        <script src="index.js"></script>
+    </body>
+</html>
