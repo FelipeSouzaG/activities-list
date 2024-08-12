@@ -34,6 +34,8 @@ O "XEROTODO" foi desenvolvido para treinamento e prática de desenvolvimento.
 
 A aplicação é para organização de tarefas do dia-a-dia
 
+OBS.: Projeto feito somente para UX. Nunhuma funcionalidade de Banco de dados ou localstorage para login e lista de atividades.
+
 
 # # 🔖 Layout
 
